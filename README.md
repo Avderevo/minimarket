@@ -51,3 +51,12 @@ $ python manage.py runserver
 ```
 # Sample application pages
 
+### Page of one product:
+
+![alt text](https://github.com/Avderevo/minimarket/blob/master/screenshots/Screenshot%20from%202018-08-25%2017.13.23.png)
+
+<hr>
+
+### Product List Page:
+
+![alt text](https://github.com/Avderevo/minimarket/blob/master/screenshots/Screenshot%20from%202018-08-25%2017.14.46.png)
