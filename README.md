@@ -28,7 +28,7 @@ export APP_SETTINGS="config.DevelopmentConfig"
 ### if the database is different from sqlite:
 
 
-DBUSERNAME, DBPASSWORD and DBNAME need to be replaced with their database access requisites
+Need to be replaced with their database access requisites: DBUSERNAME, DBPASSWORD and DBNAME 
 
 ```
 export DATABASE_URL='postgresql://DBUSERNAME:DBPASSWORD@localhost/DBNAME'
@@ -49,5 +49,5 @@ $ python manage.py runserver
  $ python manage.py db shell
  $ python manage.py runserver
 ```
-# Пример страниц прилоения
+# Sample application pages
 
