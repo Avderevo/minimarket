@@ -54,12 +54,14 @@ $ python manage.py runserver
 ### Page of one product:
 
 <hr>
+
 ![alt text](https://github.com/Avderevo/minimarket/blob/master/screenshots/Screenshot%20from%202018-08-25%2017.13.23.png)
+
 <hr>
 
 ### Product List Page:
 
+<hr>
 
-<hr>
 ![alt text](https://github.com/Avderevo/minimarket/blob/master/screenshots/Screenshot%20from%202018-08-25%2017.14.46.png)
-<hr>
+
