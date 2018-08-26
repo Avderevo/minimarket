@@ -1,0 +1,125 @@
+
+
+
+.main{
+	margin-top: 3rem;
+  min-height:100%;
+  position: relative;
+  padding-bottom: 3rem;
+
+}
+
+.nav {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 1rem;
+
+  margin-top: 1rem;
+  list-style: none;
+  background-color: #f8f9fa;
+}
+
+.h6 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+}
+
+.main-2{
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.text-muted-2{
+	font-color: #343a40;
+}
+
+.block{
+	padding: 0.1rem;
+	margin-bottom: 0.8rem;
+	background-color:#fff;
+	
+}
+
+.block-2{
+	height: 2rem;
+	width: 2rem;
+	padding: 0.15rem;
+	margin-left: 0;
+	margin-right: 0.5rem;
+	border: 1px solid #e3e8ec;
+	box-shadow: 0 1px 2px rgba(0,0,0, .3);
+
+}
+
+.nav-block {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 1;
+  list-style: none;
+}
+
+.nav-bg-yellow{
+    background-color: #fecd4a;
+}
+
+.bg-ya{
+    color: #dc3545
+}
+
+.bg-btn-car{
+    background-color:#fdd873
+}
+
+
+.card-content{
+    box-shadow: 0px 4px 15px 0px rgba(191, 195, 198, 0.29);
+    border: 0;
+
+}
+
+.text-gray{
+    color: #495057
+
+}
+
+.list-prod{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+}
+
+a:hover, 
+.a:hover {
+   text-decoration: none !important;
+}
+
+.bg-l-gray{
+    background-color: #e3e8ec;
+}
+
+.bg-prod-yellow{
+  background-color:#fdd873
+}
+
+.bg-prod-red{
+  background-color:#dc3545
+}
+
+.bg-prod-blue{
+  background-color:#007bff
+}
+
+.bg-prod-gray{
+  background-color:#6c757d
+}
+
+.bg-prod-black{
+  background-color:#000
+}
+
+.bg-prod-white{
+  background-color:#fff
+}

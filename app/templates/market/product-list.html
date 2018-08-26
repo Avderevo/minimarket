@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+{% block meta_title%}Список товаров{% endblock%}
+{% block content%}
+<div class="container">
+  <div class="mb-5">
+    <p><small>{{category.title}}</small></p>
+    <h2 class="text-gray">{{category.title}}</h2>
+  </div>
+</div>
+{% for product in product_list %}
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="block">
+              <img class="img-fluid" style = "height: 100%; width: 100%; display: block;" src="/static/img/{{product.img}}.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <a class="abc" href="/{{category.title}}/{{product.id}}"><h5 class="text-primary">{{ product.short_name}}</h5></a>
+          <p><span class="badge badge-success">4.0</span><small>  {{ product.review_number}} отзыва.</small></p>
+            <ul class="text-muted-2">
+              {% for desc in product.raw_description | minilist %}
+              <li>{{desc}}</li>
+              {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>от {{product.price}} р.</h5>
+          <p  class="text-primary"><small>125 предложений</small></p>
+        </div>
+     </div>   
+    </div>     
+  </div>   
+</div>
+{% endfor %}
+
+{% endblock%}

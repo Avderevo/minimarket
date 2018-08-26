@@ -1,0 +1,82 @@
+{% extends 'base.html'%}
+{% block meta_title%}Продукт{% endblock%}
+{% block content%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h3>{{ prod.full_name}}</h3>
+            <p><small>{{category}}</small></p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ul class="nav nav-tabs nav-fill">
+        <li class="nav-item">
+            <a class="nav-link " href="#">Описание</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Характеристики</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Модификации</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">Цены</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">Карта</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Отзывы</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Обзоры</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">Обсуждения</a>
+        </li>
+    </ul>
+</div>    
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-4">
+            <div class="block">
+                <img class="img-fluid" style = "height: 100%; width: 100%; display: block;" src="/static/img/{{prod.img}}.jpg"  alt="">
+            </div>
+        </div>
+        <div class="col-4">
+            <p><small>Доступные цвета:</small></p>
+            <div class="container">
+                <ul class="nav-block">
+                   {% for color in prod.color | minilist %}
+                    <a class="link block-2 bg-prod-{{color}}" href="#"></a>
+                   {% endfor %}
+                </ul>
+            </div>             
+            <h6 class="h6">Коротко о товаре:</h6>
+            <ul class="text-muted-2">
+              {% for desc in prod.raw_description | maxilist%}
+              <li >{{ desc}}</li>
+              {% endfor %}
+            </ul>
+        </div>      
+        <div class="col-4">
+            <div class="card card-content">
+                <div class="card-body">
+                    <h5 class="card-title text-muted">Низкая цена</h5>
+                    <p><strong>{{prod.price }} руб.</strong></p>
+                    <p><span class="badge badge-success">4.0  </span><small>  {{prod.review_number}} отзыва.</small></p>
+                    <ul class="text-muted-2">
+                      <li>Цвет товара: ченый</li>
+                      <li>Доставка: в течении 3 дней</li>
+                      <li>Гарантия: 3 года</li>
+                    </ul>
+                    <a href="#" class="btn nav-bg-yellow">В корзину</a>
+                </div>
+            </div>               
+        </div>
+    </div>  
+</div>
+
+{% endblock%}
