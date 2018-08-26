@@ -49,5 +49,5 @@ $ python manage.py runserver
  $ python manage.py db shell
  $ python manage.py runserver
 ```
-# Пример страниц прилоения
+# Sample application pages
 
