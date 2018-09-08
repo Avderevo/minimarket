@@ -1,3 +1,7 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Avderevo/minimarket/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Avderevo/minimarket/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/Avderevo/minimarket/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Avderevo/minimarket/build-status/master)
+
+
 # Minimarket
 A simple store with a category page of goods, a page of the list of goods and a page of one product.
 
